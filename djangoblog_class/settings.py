@@ -1,4 +1,5 @@
 from pathlib import Path
+import os
 from django.contrib.messages import constants
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -12,7 +13,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-s)uya9c00^(*1c*2up(z6-7*%cuxy*#jt%x%m2hfhjkn0a7*o+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = []
 
@@ -116,9 +117,9 @@ MESSAGE_TAGS={
     constants.SUCCESS:"alert alert-success"
 }
 
-EMAIL_BACKEND="django.core.mail.backends.console.EmailBackend"
-#EMAIL_HOST="smtp.gmail.com"
-#EMAIL_PORT=587
-#EMAIL_HOST_USER="yoshi.syun8@gmail.com"
-#EMAIL_HOST_PASSWORD="sy20081208sy"
-#EMAIL_USE_TLS=True
+#EMAIL_BACKEND="django.core.mail.backends.console.EmailBackend"
+EMAIL_HOST="smtp.gmail.com"
+EMAIL_PORT=587
+EMAIL_HOST_USER="yoshiyuzu33111@gmail.com"
+EMAIL_HOST_PASSWORD="isyxfgatibzhwdno"
+EMAIL_USE_TLS=True

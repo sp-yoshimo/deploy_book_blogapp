@@ -93,9 +93,12 @@ class ContactView(FormView):
             "送信者名:{0}\nメールアドレス:{1}\nタイトル:{2}\nメッセージ:{3}\n"\
             .format(name,email,title,message)
         #送信先のアドレス
-        to_list=["yoshi.syun8@gmail.com"]
+        to_list=["yoshi.syun8@gmail.com","yoshiyuzu33111@gmail.com"]
+
+        #送信元
+        from_mail="yoshiyuzu33111@gmail.com"
         #EmailMessageオブジェクトを生成
-        message=EmailMessage(subject=subject,body=message,to=to_list)
+        message=EmailMessage(subject=subject,body=message,from_email=from_mail,to=to_list)
         #send()でメールを送信
         message.send()
 
